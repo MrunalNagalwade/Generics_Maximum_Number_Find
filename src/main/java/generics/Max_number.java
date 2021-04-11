@@ -1,51 +1,15 @@
 package generics;
 
-public class Max_number {
-    public <E extends Integer> Integer checkmaxnum(E firstnumber, E secondnumber, E thirdnumber)
-    {
-        if (firstnumber.compareTo(secondnumber) > 0 )
-        {
-            return firstnumber;
-        }
-        else if (thirdnumber.compareTo(secondnumber) > 0)
-        {
-            return thirdnumber;
-        }
-        else
-        {
-            return secondnumber;
-        }
-    }
-    public <E extends Float> Float checkmaxnumFloat(E firstnumber, E secondnumber, E thirdnumber)
-    {
-        if (firstnumber.compareTo(secondnumber) > 0 )
-        {
-            return firstnumber;
-        }
-        else if (thirdnumber.compareTo(secondnumber) > 0)
-        {
-            return thirdnumber;
-        }
-        else
-        {
-            return secondnumber;
-        }
-    }
-    //For String
-    public <T extends Comparable> Comparable checkmaxString(T firstNAME, T secondNAME, T thirdNAME)
-    {
-        if (firstNAME.compareTo(secondNAME) > 0 )
-        {
-            return (String) firstNAME;
-        }
-        else if (thirdNAME.compareTo(secondNAME) > 0)
-        {
-            return (String) thirdNAME;
-        }
-        else
-        {
-            return (String) secondNAME;
-        }
-    }
+import javafx.collections.FXCollections;
 
+import java.util.Arrays;
+/*import javafx.collections.ObservableList;*/
+
+public class Max_number <E> {
+    public static  <E> E findMaxValue(E[] inputArray )
+    {
+        int size = inputArray.length;
+        Arrays.sort(inputArray);
+        return inputArray[size-1];
+    }
 }

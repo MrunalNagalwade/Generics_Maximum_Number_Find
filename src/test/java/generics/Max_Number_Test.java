@@ -1,88 +1,82 @@
 package generics;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class Max_Number_Test {
+    Max_number max_number = new Max_number();
+
+    //for Integer Number
     @Test
-    public void givenThreeInput_WhenProper_first_Number_ReturnTrue() {
-        Integer firstnumber = 9;
-        Integer secondnumber = 1;
-        Integer thirdnumber = 4;
-        Max_number max_number = new  Max_number();
-        Integer maxNum = max_number.checkmaxnum(firstnumber,secondnumber,thirdnumber);
-        Assertions.assertEquals((Integer)9,maxNum);
+    public void FirstNumber_Max()
+    {
+        Integer[] intArray = { 9, 3,6,5,7 };
+        int max = max_number.findMaxValue(intArray);
+        Assertions.assertEquals( 9, max);
+    }
+
+    @Test
+    public void SecondNumber_Max()
+    {
+        Integer[] intArray = { 30, 50, 24};
+        Integer max = max_number.findMaxValue(intArray);
+        Assertions.assertEquals( 50, max);
+    }
+
+    @Test
+    public void ThirdNumber_max()
+    {
+        Integer[] intArray = { 9, 3,12};
+        Integer max = max_number.findMaxValue(intArray);
+        Assertions.assertEquals( 12,max);
+    }
+
+
+    //for Float Number
+    @Test
+    public void Float_Max_num()
+    {
+        Float[] floatArray = { 7.8f, 3.2f, 6.3f, 2.9f };
+        Float maxf = max_number.findMaxValue(floatArray);
+        Assertions.assertEquals( 7.8f, maxf);
+    }
+
+    @Test
+    public void SecondFloat_Maximum()
+    {
+        Float[] floatArray = { 2.4f, 9.7f, 4.5f, 3.7f };
+        Float maxf = max_number.findMaxValue(floatArray);
+        Assertions.assertEquals( 9.7f, maxf);
+    }
+
+    @Test
+    public void ThirdFloat_Maximum()
+    {
+        Float[] floatArray = { 8.9f, 7.2f, 12.6f, 9.2f };
+        Float maxf = max_number.findMaxValue(floatArray);
+        Assertions.assertEquals( 12.6f, maxf);
+    }
+
+    //for string
+    @Test
+    public void string_Maximum()
+    {
+        String[] stringArray = { "mrunal", "ritu", "riyan" };
+        String maxs = max_number.findMaxValue(stringArray);
+        Assertions.assertEquals( "riyan", maxs);
+    }
+
+    @Test
+    public void string_max()
+    {
+        String[] stringArray = { "rutuja", "priyanka", "pooja" };
+        String maxs = max_number.findMaxValue(stringArray);
+        Assertions.assertEquals( "rutuja", maxs);
     }
     @Test
-    public void givenThreeInput_WhenProper_second__integerNumber_ReturnTrue() {
-        Integer firstnumber = 34;
-        Integer secondnumber = 56;
-        Integer thirdnumber = 23;
-        Max_number max_number = new  Max_number();
-        Integer maxNum = max_number.checkmaxnum(firstnumber,secondnumber,thirdnumber);
-        Assertions.assertEquals((Integer)56,maxNum);
-    }
-    @Test
-    public void givenThreeInput_WhenProper_third_integerNumber_ReturnTrue() {
-        Integer firstnumber = 45;
-        Integer secondnumber = 78;
-        Integer thirdnumber = 80;
-        Max_number max_number = new  Max_number();
-        Integer maxNum = max_number.checkmaxnum(firstnumber,secondnumber,thirdnumber);
-        Assertions.assertEquals((Integer)80,maxNum);
-    }
-    @Test
-    public void givenThreeInput_WhenProper_first_floatNumber_ReturnTrue() {
-        Float firstnumber = 120.7f;
-        Float secondnumber = 90.3f;
-        Float thirdnumber = 12.4f;
-        Max_number max_number = new  Max_number();
-        Float maxNum = max_number.checkmaxnumFloat(firstnumber,secondnumber,thirdnumber);
-        Assertions.assertEquals((Float)120.7f,maxNum);
-    }
-    @Test
-    public void givenThreeInput_WhenProper_second_floatNumber_ReturnTrue() {
-        Float firstnumber = 67.7f;
-        Float secondnumber = 90.3f;
-        Float thirdnumber = 12.4f;
-        Max_number max_number = new  Max_number();
-        Float maxNum = max_number.checkmaxnumFloat(firstnumber,secondnumber,thirdnumber);
-        Assertions.assertEquals((Float)90.3f,maxNum);
-    }
-    @Test
-    public void givenThreeInput_WhenProper_third_floatNumber_ReturnTrue() {
-        Float firstnumber = 12.7f;
-        Float secondnumber = 50.3f;
-        Float thirdnumber = 80.4f;
-        Max_number max_number = new  Max_number();
-        Float maxNum = max_number.checkmaxnumFloat(firstnumber,secondnumber,thirdnumber);
-        Assertions.assertEquals((Float)80.4f,maxNum);
-    }
-    @Test
-    public void givenThreeInput_WhenProper_first_stringNumber_ReturnTrue() {
-        String firstNAME = "mrunal";
-        String secondNAME = "puja";
-        String thirdNAME = "subodh";
-        Max_number max_number = new  Max_number();
-        String maxNum = (String) max_number.checkmaxString(firstNAME,secondNAME,thirdNAME);
-        Assertions.assertEquals((String)"subodh",maxNum);
-    }
-    @Test
-    public void givenThreeInput_WhenProper_second_stringNumber_ReturnTrue() {
-        String firstNAME = "riya";
-        String secondNAME = "swety";
-        String thirdNAME = "priyanka";
-        Max_number max_number = new  Max_number();
-        String maxNum = (String) max_number.checkmaxString(firstNAME,secondNAME,thirdNAME);
-        Assertions.assertEquals((String)"swety",maxNum);
-    }
-    @Test
-    public void givenThreeInput_WhenProper_third_stringNumber_ReturnTrue() {
-        String firstNAME = "aparna";
-        String secondNAME = "priya";
-        String thirdNAME = "sneha";
-        Max_number max_number = new  Max_number();
-        String maxNum = (String) max_number.checkmaxString(firstNAME,secondNAME,thirdNAME);
-        Assertions.assertEquals((String)"sneha",maxNum);
+    public void third_max_string()
+    {
+        String[] stringArray = { "riya", "priya", "diksha" };
+        String maxs = max_number.findMaxValue(stringArray);
+        Assertions.assertEquals( "riya", maxs);
     }
 }

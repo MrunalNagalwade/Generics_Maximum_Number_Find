@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="generics.Max_Number_Test" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-11T18:20:39" hostname="MRUNAL" time="0.046">
+<testsuite name="generics.Max_Number_Test" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-11T18:27:10" hostname="MRUNAL" time="0.052">
   <properties/>
-  <testcase name="givenThreeInput_WhenProper_third_stringNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.029"/>
-  <testcase name="givenThreeInput_WhenProper_third_integerNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.002"/>
-  <testcase name="givenThreeInput_WhenProper_third_floatNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
-  <testcase name="givenThreeInput_WhenProper_second__integerNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
-  <testcase name="givenThreeInput_WhenProper_second_floatNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
-  <testcase name="givenThreeInput_WhenProper_first_Number_ReturnTrue()" classname="generics.Max_Number_Test" time="0.002"/>
-  <testcase name="givenThreeInput_WhenProper_first_floatNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
-  <testcase name="givenThreeInput_WhenProper_second_stringNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
-  <testcase name="givenThreeInput_WhenProper_first_stringNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="string_max()" classname="generics.Max_Number_Test" time="0.032"/>
+  <testcase name="FirstNumber_Max()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="string_Maximum()" classname="generics.Max_Number_Test" time="0.002"/>
+  <testcase name="Float_Max_num()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="ThirdFloat_Maximum()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="SecondFloat_Maximum()" classname="generics.Max_Number_Test" time="0.002"/>
+  <testcase name="ThirdNumber_max()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="third_max_string()" classname="generics.Max_Number_Test" time="0.002"/>
+  <testcase name="SecondNumber_Max()" classname="generics.Max_Number_Test" time="0.001"/>
+  <system-out><![CDATA[Max:rutuja
+Max:9
+Max:riyan
+Max:7.8
+Max:12.6
+Max:9.7
+Max:12
+Max:riya
+Max:50
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
