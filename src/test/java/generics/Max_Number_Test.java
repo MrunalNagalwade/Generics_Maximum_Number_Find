@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 public class Max_Number_Test {
     @Test
-    public void givenThreeInput_WhenProper_ReturnTrue() {
-        Integer firstnumber = 1;
-        Integer secondnumber = 7;
-        Integer thirdnumber = 8;
+    public void givenThreeInput_WhenProperfirst_Number_ReturnTrue() {
+        Integer firstnumber = 9;
+        Integer secondnumber = 1;
+        Integer thirdnumber = 4;
         Max_number max_number = new  Max_number();
         Integer maxNum = max_number.checkmaxnum(firstnumber,secondnumber,thirdnumber);
-        Assertions.assertEquals((Integer)8,maxNum);
+        Assertions.assertEquals((Integer)9,maxNum);
     }
 }
