@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="generics.Max_Number_Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-11T17:56:20" hostname="MRUNAL" time="0.035">
+<testsuite name="generics.Max_Number_Test" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-11T18:20:39" hostname="MRUNAL" time="0.046">
   <properties/>
-  <testcase name="givenThreeInput_WhenProper_first_Number_ReturnTrue()" classname="generics.Max_Number_Test" time="0.032"/>
-  <testcase name="givenThreeInput_WhenProper_second_Number_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="givenThreeInput_WhenProper_third_stringNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.029"/>
+  <testcase name="givenThreeInput_WhenProper_third_integerNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.002"/>
+  <testcase name="givenThreeInput_WhenProper_third_floatNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="givenThreeInput_WhenProper_second__integerNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="givenThreeInput_WhenProper_second_floatNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="givenThreeInput_WhenProper_first_Number_ReturnTrue()" classname="generics.Max_Number_Test" time="0.002"/>
+  <testcase name="givenThreeInput_WhenProper_first_floatNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="givenThreeInput_WhenProper_second_stringNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
+  <testcase name="givenThreeInput_WhenProper_first_stringNumber_ReturnTrue()" classname="generics.Max_Number_Test" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
